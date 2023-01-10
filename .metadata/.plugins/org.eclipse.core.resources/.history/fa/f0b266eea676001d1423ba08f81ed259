@@ -1,0 +1,16 @@
+package ncs.test05;
+
+public class BookArrayTest {
+
+	public static void main(String[] args) {
+
+		Book bArray[] = new Book[3];
+		
+		
+		// Book 객체를 3개 생성하여 배열에 넣는다.
+		// 배열에 있는 객체 정보를 모두 getter 로 출력 한다. – for 문을 이용 할 것
+		// 실행 결과와 같이 계산 출력
+
+	}// m()
+
+}// c

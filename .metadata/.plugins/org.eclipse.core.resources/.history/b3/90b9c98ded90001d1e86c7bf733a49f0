@@ -1,0 +1,280 @@
+import java.util.Scanner;
+
+ 
+
+class Student {
+
+    String name = null;
+
+    String number = null;
+
+    int kor;
+
+    int eng;
+
+    int math;
+
+ 
+
+/*
+
+* public Student() { this.name = null; this.number = null; this.kor = 0;
+
+* this.eng = 0; this.math = 0; }
+
+*/
+
+    public Student(String _name, String _number, int _kor, int _eng, int _math) {
+
+        this.name = _name;
+
+        this.number = _number;
+
+        this.kor = _kor;
+
+        this.eng = _eng;
+
+        this.math = _math;
+
+    }
+
+ 
+
+}
+
+ 
+
+public class test {
+
+    static Scanner scan = new Scanner(System.in);
+
+    Student[] stu = new Student[10];
+
+    int count = 0;
+
+ 
+
+    public void menu() {
+
+        System.out.println("##### 학생 관리 프로그램 #####");
+
+        System.out.println("1. 입력");
+
+        System.out.println("2. 보기");
+
+        System.out.println("3. 검색");
+
+        System.out.println("4. 수정");
+
+        System.out.println("5. 종료");
+
+        System.out.println("#########################");
+
+        System.out.println();
+
+    }
+
+ 
+
+    public void insert() {
+
+        System.out.print("이름:");
+
+        String name = scan.next();
+
+        System.out.print("학번:");
+
+        String number = scan.next();
+
+        System.out.print("국어:");
+
+        int kor = scan.nextInt();
+
+        System.out.print("영어:");
+
+        int eng = scan.nextInt();
+
+        System.out.print("수학:");
+
+        int math = scan.nextInt();
+
+ 
+
+        stu[count] = new Student(name, number, kor, eng, math);
+
+        count++;
+
+    }
+
+ 
+
+    public void search() {
+
+        System.out.print("이름 입력 :");
+
+        String name = scan.next();
+
+ 
+
+        System.out.println("학생 검색 정보");
+
+        System.out.println("이름\t학번\t국어\t영어\t수학");
+
+        for (int i = 0; i < count; i++) {
+
+            if (stu[i].name.equals(name)) {
+
+                System.out.print(stu[i].name + "\t");
+
+                System.out.print(stu[i].number + "\t");
+
+                System.out.print(stu[i].kor + "\t");
+
+                System.out.print(stu[i].eng + "\t");
+
+                System.out.print(stu[i].math + "\t");
+
+                System.out.println();
+
+                break;
+
+            }
+
+        }
+
+        System.out.println();
+
+    }
+
+ 
+
+    public void update() {
+
+        int point = 0;
+
+        System.out.print("이름 입력 :");
+
+        String name = scan.next();
+
+ 
+
+       System.out.println("학생 정보 수정");
+
+       for (int i = 0; i < count; i++) {
+
+           if (stu[i].name.equals(name)) {
+
+               point = i;
+
+               break;
+
+           }
+
+       }
+
+       System.out.print("학번:");
+
+       stu[point].number = scan.next();
+
+       System.out.print("국어:");
+
+       stu[point].kor = scan.nextInt();
+
+       System.out.print("영어:");
+
+       stu[point].eng = scan.nextInt();
+
+       System.out.print("수학:");
+
+       stu[point].math = scan.nextInt();
+
+       System.out.println();
+
+    }
+
+ 
+
+    public void show() {
+
+        System.out.println("학생 정보리스트 보기");
+
+        System.out.println("이름\t학번\t국어\t영어\t수학");
+
+        for (int i = 0; i < count; i++) {
+
+            System.out.print(stu[i].name + "\t");
+
+            System.out.print(stu[i].number + "\t");
+
+            System.out.print(stu[i].kor + "\t");
+
+            System.out.print(stu[i].eng + "\t");
+
+            System.out.print(stu[i].math + "\t");
+
+            System.out.println();
+
+        }
+
+        System.out.println();
+
+    }
+
+ 
+
+    public static void main(String[] args) {
+
+        test t1 = new test();
+
+        int su;
+
+ 
+
+        while (true) {
+
+            t1.menu();
+
+            System.out.print("번호 입력 : ");
+
+            su = scan.nextInt();
+
+ 
+
+            if (su == 5)
+
+                break;
+
+ 
+
+            if (su == 1)
+
+                t1.insert();
+
+ 
+
+            if (su == 2)
+
+                t1.show();
+
+ 
+
+            if (su == 3)
+
+                t1.search();
+
+ 
+
+            if (su == 4)
+
+                t1.update();
+
+ 
+
+        }
+
+       System.out.println("프로그램 종료");
+
+    }
+
+}
+

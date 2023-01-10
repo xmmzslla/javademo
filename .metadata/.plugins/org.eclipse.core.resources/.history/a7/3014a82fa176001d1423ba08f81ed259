@@ -1,0 +1,13 @@
+package ncs.test04;
+
+public class Product {
+	String name;
+	int price;
+	int quantity;
+	
+	public Product() {
+		
+	}
+	public Product (name:String, price:int, quantity:int);
+
+}//c

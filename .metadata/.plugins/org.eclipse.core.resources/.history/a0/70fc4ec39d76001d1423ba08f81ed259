@@ -1,0 +1,27 @@
+package ncs.test03;
+
+import java.util.Calendar;
+
+public class DataTest {
+	
+	public static void main(String[] args) {
+		Calendar Day = Calendar.getInstance();
+		int Day_year = 1987;
+		int Day_month = 5;
+		int Day_date = 27;
+		
+		Calendar toDay = Calendar.getInstance();
+		int toDay_year = 2016;
+		int toDay_month = 4;
+		int toDay_date = 18;
+		System.out.println(toDay);
+		
+		long eventDay = examDay.getTimeInMillis();
+		long nowDay = toDay.getTimeInMillis();
+		System.out.println("eventDay: " + eventDay);
+		System.out.println("nowDay: " + nowDay);
+		
+		
+	}//m()
+
+}//c

@@ -1,0 +1,28 @@
+package java008_class.part02;
+
+/*
+ * class 클래스명{
+ * 
+ * 멤버변수;
+ * static{}
+ * 생성자();
+ * 메소드();
+ * 
+ * }
+*/
+public class OrderStatic {
+	static {
+	System.out.println("static");
+
+}
+
+public OrderStatic() {
+	System.out.println("constructor");
+
+}
+
+public void display() {
+	System.out.println("dispiay");
+
+   }
+}

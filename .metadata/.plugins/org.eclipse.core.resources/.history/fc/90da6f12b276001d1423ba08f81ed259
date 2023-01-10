@@ -1,0 +1,17 @@
+package ncs.test08;
+
+public class User {
+	String id;
+	String password;
+	String name;  
+	int age;
+	char gender;
+	String phone;
+	
+	 public User() {
+		 
+	 }
+	 
+	 
+
+}
