@@ -1,12 +1,12 @@
 package java009_inheritance.part09;
 
 public class HandPhone {
-
-	private String maker; // samsun...
+	private String maker;  //samsun, iphone, lg, saomi
 	private String model;
 	private int price;
-
+	
 	public HandPhone() {
+	
 	}
 
 	public HandPhone(String maker, String model, int price) {
@@ -39,10 +39,9 @@ public class HandPhone {
 	public void setPrice(int price) {
 		this.price = price;
 	}
-
+	
 	@Override
 	public String toString() {
-		return String.format("%-4s %-10s %6d", maker, model, price);
-	}
-
+	  return String.format("%-4s %-10s %6d",  maker, model, price);
+	}	
 }

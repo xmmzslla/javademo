@@ -14,6 +14,7 @@ package java002_statements.answ;
  *    2012년도의 태생은  용띠입니다.  
  */
 
+
 public class Prob01 {
 
 	public static void main(String[] args) {

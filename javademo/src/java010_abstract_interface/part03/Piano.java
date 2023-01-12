@@ -2,6 +2,7 @@ package java010_abstract_interface.part03;
 
 public class Piano extends Instrument{
 	
+	
 	public Piano() {
 		
 	}
@@ -11,9 +12,7 @@ public class Piano extends Instrument{
 	}
 	
 	@Override
-	public void play() {
+	public void play() {	
 		System.out.println("손가락으로 누른다.");
-		
 	}
-
 }

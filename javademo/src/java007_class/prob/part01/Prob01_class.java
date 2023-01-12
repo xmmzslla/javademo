@@ -1,7 +1,5 @@
 package java007_class.prob.part01;
 
-//import java007_class.part05.Creditcard;
-
 /* 출력력과처럼 총합계까지 출력이 되도록 main()메소드에 
  * 로직을 추가하세요.
  * 
@@ -23,11 +21,6 @@ public class Prob01_class {
 		me[2] = new MovieShop("소수의견", 7000, 2);
 
 		// 여기에 구현하세요/////////////////
-		for(int i = 0 ; i < me.length ; i++) {
-			me[i].prn();
-			sum += me[i].countMoney();
-		}
-		System.out.println("총합계: " + sum );
 		
 		
 		//////////////////////////

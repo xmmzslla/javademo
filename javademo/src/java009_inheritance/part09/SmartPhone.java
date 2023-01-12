@@ -1,11 +1,11 @@
 package java009_inheritance.part09;
 
-public class SmartPhone extends HandPhone{
-	
+public class SmartPhone extends HandPhone{	
 	private String number;
 	private String type;
 	
 	public SmartPhone() {
+	
 	}
 
 	public SmartPhone(String maker, String model, int price, String number, String type) {
@@ -32,8 +32,14 @@ public class SmartPhone extends HandPhone{
 	
 	@Override
 	public String toString() {
-		return String.format("%-4s %-10s %6d %s %s", 
-				getMaker(), getModel(), getPrice(), getNumber(), getType());//넘버랑 타입은 같은 곳에 있는거라 겟 안넣어도 됨 
-	
+	  return String.format("%-4s %-10s %6d %s %s",
+			  getMaker(), getModel(), getPrice(), getNumber(), getType());
+	}	
+   
 }
-}
+
+
+
+
+
+

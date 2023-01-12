@@ -14,13 +14,10 @@ package java001_basic.prob;
 public class Prob04 {
 
 	public static void main(String[] args) {
-		int year=2013;
+		int year=2012;
 		
 		//여기에 작성하시오.
-		 boolean y1 = year % 4 == 0 && year % 100 != 0 || year % 400 == 0;
-		 String yun = y1 ? "윤년" : "평년";
-		 
-		 System.out.printf("%d년도는 %s입니다.", year, yun);
+		
 	}
 
 }

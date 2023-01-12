@@ -3,9 +3,9 @@ package java013_api;
 import static java.lang.Math.*;
 
 /*
- * 난수를 이용해서 소수점 첫째자리까지 반올림해서 구하시오. 
- * ex) 0.5689... => 5.7
-*/
+ * 난수를 이용해서 소수점 첫째자리까지 반올림해서 구하시오.
+ *  ex) 0.5689....   =>5.7
+ */
 
 public class Java136_Math {
 
@@ -18,15 +18,13 @@ public class Java136_Math {
 		
 		long data = round(nan);
 		System.out.println(data);
-		
+
 		double num = (double)data/10;
 		System.out.println(num);
 		
-		System.out.println("==========================");
+		System.out.println("=========================");
 		
 		System.out.println((double)round(random()*100)/10);
+	}// end main()
 
-		
-	}// m()
-
-}// c
+}// end class

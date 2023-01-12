@@ -13,7 +13,7 @@ package java001_basic;
  *    Array, Class , Interface
  * 
  *시스템에서 데이터 타입 크기
- * byte < char < short < int < long < float < double
+ * byte < char, short < int < long < float < double
  */
 
 

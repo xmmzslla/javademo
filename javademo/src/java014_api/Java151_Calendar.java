@@ -3,10 +3,11 @@ package java014_api;
 import java.util.Calendar;
 
 /*
- * 수능일: 2022-12-17
- * 오늘: 2022-12-1
- * 남은일: 15
-*/
+ * 수능일 : 2022-12-17
+ * 오늘 : 2022-12-2
+ * 남은일 : 15
+ */
+
 
 public class Java151_Calendar {
 
@@ -14,28 +15,41 @@ public class Java151_Calendar {
 		Calendar examDay = Calendar.getInstance();
 		int examDay_year = 2022;
 		int examDay_month = 12;
-		int examDay_date = 17;
-
-		examDay.set(examDay_year, examDay_month - 1, examDay_date);
+		int examDay_date = 2;	
+		
+		
+		
+		examDay.set(examDay_year, examDay_month-1, examDay_date);
 		System.out.println(examDay);
-
+		
 		Calendar toDay = Calendar.getInstance();
-		toDay.set(Calendar.HOUR,0);
-		toDay.set(Calendar.MINUTE,0);
-		toDay.set(Calendar.SECOND,0);
+		toDay.set(Calendar.HOUR, 0);
+		toDay.set(Calendar.MINUTE, 0);
+		toDay.set(Calendar.SECOND, 0);
+		
 		System.out.println(toDay);
-
+		
 		long eventDay = examDay.getTimeInMillis();
 		long nowDay = toDay.getTimeInMillis();
-		System.out.println("eventDay: " + eventDay);
-		System.out.println("nowDay: " + nowDay);
+	    System.out.println("eventDay:" + eventDay);
+	    System.out.println("nowDay:" + nowDay);
+	    
+	    
+	    //하루 계산
+	    System.out.println(60*60*24*1000);
+	   
+	    
+	    long endDay = (eventDay-nowDay)/(60*60*24*1000);
+	    System.out.println("남은 일:" + endDay);   	    
+	    
+	}//end main()
 
-		// 하루 계산
-		System.out.println(60 * 60 * 24 * 1000);
+}//end class
 
-		long endDay = (eventDay - nowDay) / (60 * 60 * 24 * 1000);
-		System.out.println("남은 일: " + endDay);
 
-	}// m()
 
-}// c
+
+
+
+
+

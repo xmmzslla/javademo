@@ -8,13 +8,13 @@ package java007_class.part02;
  * 윤달수/피부과/30
  * 
  * [출력결과]
- * 박상기/피부과/20
- * 윤달수/피부과/30
-*/
+ * 박상기 피부과 20
+ * 윤달수 피부과 30
+ */
+
 public class Java075_class {
-	
+
 	public static void main(String[] args) {
-		
 		Doctor[] dt = new Doctor[5];
 		dt[0] = new Doctor("김병조", "외과", 39);
 		dt[1] = new Doctor("이상만", "내과", 50);
@@ -23,24 +23,26 @@ public class Java075_class {
 		dt[4] = new Doctor("윤달수", "피부과", 30);
 		
 		search(dt, "피부과");
-		
-	}//m()
-	
+	}// end main()
+
 	public static void search(Doctor[] dt, String medical) {
-		
 		boolean chk = false;
-		
-		for(int i = 0 ; i <dt.length ; i++) {
+		for(int i=0; i<dt.length; i++ ) {
 			if(dt[i].medical == medical) {
 				chk = true;
 				System.out.println(dt[i].toString());
 			}
 		}
-		
+
 		if(!chk) {
 			System.out.printf("%s 진료과목은 없습니다.\n", medical);
 		}
-		
-	}//s()
+	}// end search()
 
-}//c
+}// end class
+
+
+
+
+
+

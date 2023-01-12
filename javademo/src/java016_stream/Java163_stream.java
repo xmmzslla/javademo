@@ -6,38 +6,36 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 
 public class Java163_stream {
-	
+
 	public static void main(String[] args) {
-		
-		//바이트 스트림
+		// 바이트 스트림
 		InputStream is = System.in;
-		
-		//바이트 스트림
-		InputStreamReader ir = new InputStreamReader(is); 
-		
-		//문자 스트림 
+
+		// 바이트 스트림과 문자 스트림
+		InputStreamReader ir = new InputStreamReader(is);
+
+		// 문자 스트림
 		BufferedReader br = new BufferedReader(ir);
+
+
+		System.out.print("데이터 입력:");
 		
-		System.out.print("데이터 입력: ");
-		
-		try {
+		 try {
 //			int data = br.read();
 //			System.out.println(data);
 //			System.out.println((char)data);
-			////////////////////////////////////////
-			
-//			int data;
-//			while((data = br.read())!= 13)
-//				System.out.println((char)data);
-			
-			///////////////////////////////////////
-			
-			String line = br.readLine();
-			System.out.println(line);
-			
+///////////////////////////////////////////////////////////////////////////			 
+//			 int data;
+//			 while((data=br.read())!=13)
+//				 System.out.println((char)data);
+//////////////////////////////////////////////////////////////////////////			 
+			 
+			 String line = br.readLine();
+			 System.out.println(line);
+			 
 		} catch (IOException e) {
 			e.printStackTrace();
-		}finally {
+		} finally {			
 				try {
 					br.close();
 					ir.close();
@@ -46,7 +44,18 @@ public class Java163_stream {
 					e.printStackTrace();
 				}
 		}
-		
-	}//m()
 
-}//c
+	}// end main()
+
+}// end class
+
+
+
+
+
+
+
+
+
+
+

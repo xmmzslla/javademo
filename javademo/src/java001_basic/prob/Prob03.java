@@ -11,13 +11,7 @@ package java001_basic.prob;
 public class Prob03 {
 
 	public static void main(String[] args) {
-	  //여기에 구현하세요.	
-		
-		int apple = 123;
-		int put = 10;
-		
-		int basket = apple % put == 0 ? apple / put : apple / put + 1;
-		System.out.println("필요한 바구니 수  : " + basket);
+	  //여기에 구현하세요.		
      
       
 	}//end main()

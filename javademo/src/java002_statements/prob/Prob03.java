@@ -25,23 +25,9 @@ public class Prob03 {
 		int deliveryMoney = 0; // 배달금액
 		int totalMoney = 0;// 총금액
 
-		// 여기에 구현하시오./////////////////////
-		if(product < 30000) {
-			if(delivery == "택배") {
-				deliveryMoney = 3000;
-			} else if(delivery == "퀵") {
-				deliveryMoney = 12000;
-			}
-		}
-		
-		totalMoney = product + deliveryMoney;
-		
-		System.out.printf("물품금액 : %d원\n", product);
-		System.out.printf("배달금액 : %d원\n", deliveryMoney);
-		System.out.printf("총 금액 : %d원\n", totalMoney);
+		// 여기에 구현하시오.///////////////////////////////
 		
 		
-
 		///////////////////////////////
 
 	}// end main()

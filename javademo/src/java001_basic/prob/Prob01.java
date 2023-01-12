@@ -14,8 +14,6 @@ public class Prob01 {
 		
 		//여기에 작성하세요.    
 		
-		res = num % 10 == 0 ? 1 : 0;
-		System.out.println("res=" + res);
-	}//m
+	}
 
-}//c
+}

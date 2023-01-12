@@ -24,33 +24,6 @@ public class Prob02 {
 		int price = 0;
 
 		// switch~case문을 이용해서 프로그램을 코딩하시요.///////////////////////////////
-		switch(code) {
-		
-		case 'A' :
-			menu = "짬뽕";
-			price = 7500;
-			break;
-		
-		case 'B' :
-			menu = "만두";
-			price = 6000;
-			break;
-		
-		case 'C' :
-			menu = "짜장";
-			price = 5000;
-			break;
-		
-		case 'D' :
-			menu = "라면";
-			price = 4000;
-			break;
-		
-		default :
-			System.out.println("제공하지 않는 메뉴입니다.");
-			return;
-		}
-		
 	
 		
 		///////////////////////////////////////////////

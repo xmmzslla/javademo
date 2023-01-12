@@ -6,9 +6,9 @@ package java008_static_access.prob.part02;
 *   -qty:int
 *   -cost:int
 *   
-*   +setItem(item String):void
-*   +setQty(qty int):void
-*   +setCost(cost int):void
+*   +setItem(item :String):void
+*   +setQty(qty :int):void
+*   +setCost(cost :int):void
 *   +getItem():String
 *   +getQty():int
 *   +getCost():int

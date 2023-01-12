@@ -6,11 +6,11 @@ abstract public class CarAbs {
 	String color;
 	
 	public CarAbs() {
-		
+	
 	}
 	
-	abstract public void word(); //추상메소드
-
+	abstract public void work(); //추상메소드(abstract method)
+	
 	public void display() {
 		System.out.printf("%d %s\n", speed, color);
 	}

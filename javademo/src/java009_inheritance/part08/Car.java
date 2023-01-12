@@ -1,7 +1,6 @@
 package java009_inheritance.part08;
 
 public class Car {
-
 	private int speed;
 	String color;
 
@@ -27,6 +26,14 @@ public class Car {
 
 	@Override
 	public String toString() {
-		return String.format("차량의 색상 : %s, 속도 : %d", color, speed);
+	 return String.format("차량의 색상:%s, 속도:%d", color, speed);
 	}
 }
+
+
+
+
+
+
+
+

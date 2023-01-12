@@ -32,17 +32,11 @@ public class Prob02_class {
 
 	public static void display(SalesGrade[] sg) {
 		// 연봉등급표를 출력하는 로직구현
-		
-		
-		for(int i = 0 ; i < sg.length ; i++) {
-			System.out.println(sg[i].toString());
-		}
 
 	}// end display()
 
 	public static void display(SalesGrade[] sg, String name, int sales) {
 		// 사원의 연봉등급을 출력하는 로직구현
-		
 
 	}// end display()
 

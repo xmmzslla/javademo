@@ -20,9 +20,6 @@ public class Prob05 {
 		int hap = ko + en + jp;
 
 		// 여기에 구현하세요.
-		double average = (double)hap / 3;
-		String bool = average >= 60 ? "합격" : "불합격";
-		System.out.printf("평균 %.1f점, %s 입니다.", average, bool);
 		
 		
         

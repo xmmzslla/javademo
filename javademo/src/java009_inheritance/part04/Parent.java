@@ -12,5 +12,4 @@ public class Parent /* extends Object */ {
 		this.name = name;
 		this.age = age;
 	}
-
 }
